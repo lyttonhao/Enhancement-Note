@@ -76,8 +76,12 @@ using a sharp reference example that contains some shared content with the blurr
 
 extend non-rigid dense correspondence (NRDC)
 
+* correspondence for blur kernel esitimation and a local prior for deconvolution
+* spatically varying blur estimation
+
 ##  Deblurring Face Images with Exemplars
 
 2014 ECCV, Jinshan Pan1, Zhe Hu2, Zhixun Su, and Ming-Hsuan Yang
 [Project Page](https://eng.ucmerced.edu/people/zhu/ECCV14_facedeblur.html)
 
+find best match example --> use its contour as salient edges for kernel estimation
