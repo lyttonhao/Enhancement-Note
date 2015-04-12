@@ -84,4 +84,38 @@ extend non-rigid dense correspondence (NRDC)
 2014 ECCV, Jinshan Pan1, Zhe Hu2, Zhixun Su, and Ming-Hsuan Yang
 [Project Page](https://eng.ucmerced.edu/people/zhu/ECCV14_facedeblur.html)
 
+**exploit edge**
+
 find best match example --> use its contour as salient edges for kernel estimation
+
+The initial predicted salient edges are from the examplar image
+
+edge for estimation refer to [Cho 2009](#fast-motion-deblurring)
+
+
+## Fast Motion Deblurring
+
+2009 SIGGRAPH/TOG, Sunghyun Cho, Seungyong Lee
+
+**exploit edge**
+
+Three steps, coarse-to-fine:
+
+* **prediction**: estimate the image gradients of latent image ( bilateral filtering, shocking filtering, gradient magnitude thresholding)
+* **kernel esitmation**
+* **deconvolutuion**
+
+## Two-Phase Kernel Estimation for Robust Motion Deblurring
+
+2010 ECCV, Li Xu, Jiaya Jia [PDF](http://www.cs.cuhk.edu.hk/~leojia/projects/robust_deblur/robust_motion_deblurring.pdf)
+
+**exploit edge**
+
+**strong edges don't always profit kernel estimation**: *the scale of an object is smaller than that of the blur kernel, the edge information could damage kernel estimation*
+
+* phrase one: kernel initialzation --> select edges
+* phrase two: ISD-based kernel refinement
+
+## Psf estimation using sharp edge prediction
+
+2008 CVPR, Neel Joshi, Richard Szeliski, David J. Kriegman
