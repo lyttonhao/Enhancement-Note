@@ -23,7 +23,7 @@
 
 ##  Personalization of Image Enhancement
 
-2010 CVPR, Sing Bing Kang, Ashish Kapoor, Dani Lishchinski
+2010 CVPR, Sing Bing Kang, Ashish Kapoor, Dani Lishchinski [PDF](http://research.microsoft.com/en-us/um/people/akapoor/papers/personalizedenhancement-cvpr2010.pdf)
 
 Incorporating user preference in automatic image enhancement
 Filters:
@@ -31,7 +31,7 @@ Filters:
 
 ##  Collaborative Personalization of Image Enhancement
 
-2011 CVPR, Juan C. Caicedo, Ashish Kapoor, **Sing Bing Kang**
+2011 CVPR, Juan C. Caicedo, Ashish Kapoor, **Sing Bing Kang** [PDF](http://research.microsoft.com/en-us/um/people/akapoor/papers/cvpr%202011a.pdf)
 
 User identity and User preferences --> image enhancement
 
@@ -55,11 +55,13 @@ Liad Kaufman Dani Lischinski Michael Werman
 
 ## Non-Rigid Dense Correspondence with Applications for Image Enhancement
 2011 TOG, Yoav HaCohen, Eli Shechtman, Dan B Goldman, Dani Lishchinski
-
+[PDF](http://www.cs.huji.ac.il/~yoavhacohen/nrdc/nrdc.pdf)
 Dense Correspondence
 ![Alt text](images/3.png )
 
-compare to SIFT-Flow [Liu, 2008], Generalized PatchMatch (GPM), sparse SIFT corespondence [Lowe 2004]
+compare to SIFT-Flow [Liu, 2008], Generalized PatchMatch (GPM), sparse SIFT correspondence [Lowe 2004]
+
+Correspondence: using a coarse-to-fine scheme using GPM
 
 applications
 
@@ -76,8 +78,8 @@ using a sharp reference example that contains some shared content with the blurr
 
 extend non-rigid dense correspondence (NRDC)
 
-* correspondence for blur kernel esitimation and a local prior for deconvolution
-* spatically varying blur estimation
+* correspondence for blur kernel estimation and a local prior for deconvolution
+* spatially varying blur estimation
 
 ##  Deblurring Face Images with Exemplars
 
@@ -88,7 +90,7 @@ extend non-rigid dense correspondence (NRDC)
 
 find best match example --> use its contour as salient edges for kernel estimation
 
-The initial predicted salient edges are from the examplar image
+The initial predicted salient edges are from the exemplar image
 
 edge for estimation refer to [Cho 2009](#fast-motion-deblurring)
 
@@ -103,7 +105,7 @@ Three steps, coarse-to-fine:
 
 * **prediction**: estimate the image gradients of latent image ( bilateral filtering, shocking filtering, gradient magnitude thresholding)
 * **kernel esitmation**
-* **deconvolutuion**
+* **deconvolution**
 
 ## Two-Phase Kernel Estimation for Robust Motion Deblurring
 
